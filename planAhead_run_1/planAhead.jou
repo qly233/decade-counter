@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Sat Dec 11 22:36:21 2021
+# Process ID: 23292
+# Log file: D:/szdl/shijinzhijishuqi/planAhead_run_1/planAhead.log
+# Journal file: D:/szdl/shijinzhijishuqi/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/szdl/shijinzhijishuqi/pa.fromNetlist.tcl
+set_property iostandard LVCMOS18 [get_ports [list {q[3]} {q[2]} {q[1]} {q[0]}]]
+set_property iostandard LVCMOS18 [get_ports [list clk]]
+set_property iostandard LVCMOS18 [get_ports [list co]]
+set_property iostandard LVCMOS18 [get_ports [list en]]
+set_property iostandard LVCMOS18 [get_ports [list mr]]
+set_property pulltype PULLDOWN [get_ports [list clk]]
+set_property pulltype PULLDOWN [get_ports [list en]]
+set_property pulltype PULLDOWN [get_ports [list mr]]
+startgroup
+set_property package_pin R1 [get_ports {q[3]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {q[2]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {q[1]}]
+endgroup
+startgroup
+set_property package_pin N2 [get_ports {q[0]}]
+endgroup
+startgroup
+set_property package_pin M1 [get_ports co]
+endgroup
+set_property package_pin "" [get_ports [list  clk]]
+startgroup
+set_property package_pin T3 [get_ports mr]
+endgroup
+startgroup
+set_property package_pin U3 [get_ports en]
+endgroup
+startgroup
+set_property package_pin R4 [get_ports clk]
+endgroup
+save_constraints

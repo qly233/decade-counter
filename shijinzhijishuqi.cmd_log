@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "D:/szdl/shijinzhijishuqi/shijinzhijishuqi.xst" -ofn "D:/szdl/shijinzhijishuqi/shijinzhijishuqi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc shijinzhijishuqi.ucf -p xc7a100t-fgg484-2L shijinzhijishuqi.ngc shijinzhijishuqi.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shijinzhijishuqi_map.ncd shijinzhijishuqi.ngd shijinzhijishuqi.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc shijinzhijishuqi.ucf -p xc7a100t-fgg484-2L shijinzhijishuqi.ngc shijinzhijishuqi.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shijinzhijishuqi_map.ncd shijinzhijishuqi.ngd shijinzhijishuqi.pcf 
+par -w -intstyle ise -ol high -mt off shijinzhijishuqi_map.ncd shijinzhijishuqi.ncd shijinzhijishuqi.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml shijinzhijishuqi.twx shijinzhijishuqi.ncd -o shijinzhijishuqi.twr shijinzhijishuqi.pcf -ucf shijinzhijishuqi.ucf 
+bitgen -intstyle ise -f shijinzhijishuqi.ut shijinzhijishuqi.ncd 
+xst -intstyle ise -ifn "D:/szdl/shijinzhijishuqi/shijinzhijishuqi.xst" -ofn "D:/szdl/shijinzhijishuqi/shijinzhijishuqi.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc shijinzhijishuqi.ucf -p xc7a100t-fgg484-2L shijinzhijishuqi.ngc shijinzhijishuqi.ngd  
+map -intstyle ise -p xc7a100t-fgg484-2L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o shijinzhijishuqi_map.ncd shijinzhijishuqi.ngd shijinzhijishuqi.pcf 
+par -w -intstyle ise -ol high -mt off shijinzhijishuqi_map.ncd shijinzhijishuqi.ncd shijinzhijishuqi.pcf 
+trce -intstyle ise -v 3 -s 2L -n 3 -fastpaths -xml shijinzhijishuqi.twx shijinzhijishuqi.ncd -o shijinzhijishuqi.twr shijinzhijishuqi.pcf -ucf shijinzhijishuqi.ucf 
+bitgen -intstyle ise -f shijinzhijishuqi.ut shijinzhijishuqi.ncd 
